@@ -1,5 +1,0 @@
-My web application will be a retail clothing store. The name of the application will be Christian's Clothes.
-The type of app is a retail web application for browsing various items of clothing. The app should be usable by desktop PCs, smart phones, tablets, etc.
-Basic description of app:
-Welcome to Christian's Clothes, an online web app! Our app is designed to provide users with an excellent online shopping service no matter where you are browsing from! We have passionately curated a diverse selection of clothing to choose from, allowing customers to have the best experience possible when using our app.
-When you're using Christian's Clothes, you will easily be able to browse thousands of different types of clothes from all stores and brands. We have created a very user-friendly interface that ensures you will have the easiest time possible choosing from all different types of clothes available on the web. We hope that you enjoy using Christian's Clothes!
