@@ -1,0 +1,32 @@
+﻿@model ProductModel
+
+@{
+    ViewData["Title"] = "Product Details";
+}
+
+<h2 class="text-primary">Product Details</h2>
+
+<div class="table-responsive">
+    <table class="table table-hover">
+        <tbody>
+            <tr>
+                <th class="text-primary">Name</th>
+                <td>@Model.ProductName</td>
+            </tr>
+            <tr>
+                <th class="text-primary">Image</th>
+                <td><img src="@Url.Content(Model.ProductImage)" alt="Product Image" class="img-fluid" /></td>
+            </tr>
+            <tr>
+                <th class="text-primary">Description</th>
+                <td>@Model.ProductDescription</td>
+            </tr>
+            <tr>
+                <th class="text-primary">Price</th>
+                <td>$@Model.ProductPrice</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<a asp-action="ListProducts" asp-controller="Product" class="btn btn-primary mt-3">Back to Products</a>

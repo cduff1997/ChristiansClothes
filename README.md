@@ -1,1 +1,1 @@
-# ChristiansClothes Week 5 Adding 2 more pages to my retail app, an about page and a contact page.
+# ChristiansClothes Week 7. Adding a Products page to my web app. Including and displaying products to customers. I added a model, view, and controller to my application. I built on my previous week 5 files.
