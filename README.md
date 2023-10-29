@@ -1,1 +1,4 @@
-# ChristiansClothes Week 7. Adding a Products page to my web app. Including and displaying products to customers. I added a model, view, and controller to my application. I built on my previous week 5 files.
+# ChristiansClothes Week 9. Added a link to my navbar for a FAQ page. Added a razor view for it, heading, title, and six common questions asked. Used bootstrap css classes for accordion style on the FAQ page. Added a MySession.cs class to my models folder with variables that are my
+# name, last name, course, and favorite number. Added a tools page to my navbar, to display the session state info variables. Added two Tools action methods to HomeController to set four variables and get four and display them. Added a tools view to my Home folder,
+# displaying the four variables with labels and readonly input elements. Included a button that displays the four variables and a link styled as a button that clears the values of the four variables when clicked! Tried to style the tools.cshtml similar to the
+# contact page. Added Startup.cs for session states. Changed some products after feedback from Week 7's submission.

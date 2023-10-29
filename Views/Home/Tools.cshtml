@@ -1,0 +1,50 @@
+@model ChristiansClothes.Models.MySession
+
+@{
+    ViewData["Title"] = "Tools";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <h2>Session Tools</h2>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label asp-for="FirstName"></label>
+                <input asp-for="FirstName" class="form-control" readonly />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="LastName"></label>
+                <input asp-for="LastName" class="form-control" readonly />
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label asp-for="Course"></label>
+                <input asp-for="Course" class="form-control" readonly />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="FavNum"></label>
+                <input asp-for="FavNum" class="form-control" readonly />
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <form asp-action="DisplaySessionVariables" method="post">
+                <button type="submit" class="btn btn-primary">Display Session Variables</button>
+            </form>
+
+            <form asp-action="ClearSessionVariables" method="post">
+                <button type="submit" class="btn btn-danger mt-2">Clear Session Variables</button>
+            </form>
+        </div>
+    </div>
+
+    <a asp-action="Index" asp-controller="Home" class="btn btn-secondary mt-4">Back to Home</a>
+</div>
