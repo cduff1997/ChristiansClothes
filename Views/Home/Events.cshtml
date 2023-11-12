@@ -1,0 +1,30 @@
+﻿@using ChristiansClothes.Models
+@model List<Event>
+
+@{
+    ViewData["Title"] = "Upcoming Events";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+    <div class="row">
+        @foreach (var myEvent in Model)
+        {
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">@myEvent.Title</h5>
+                        <p class="card-text">@myEvent.Description</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong>Age Group:</strong> @myEvent.AgeGroup</li>
+                            <li class="list-group-item"><strong>Date and Time:</strong> @myEvent.DateAndTime?.ToString("MMMM dd, yyyy h:mm tt")</li>
+                            <li class="list-group-item"><strong>Location:</strong> @myEvent.Location</li>
+                            <li class="list-group-item"><strong>Registration:</strong> @myEvent.RegistrationInfo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
