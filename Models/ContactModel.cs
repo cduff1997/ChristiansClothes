@@ -4,6 +4,9 @@ namespace ChristiansClothes.Models
 {
     public class ContactModel
     {
+        [Key]
+        public int ContactId { get; set; }
+
         [Required(ErrorMessage = "Please enter your first name.")]
         [StringLength(30, ErrorMessage = "First name must be 30 characters or less.")]
         [RegularExpression("^[a-zA-Z]*$", ErrorMessage = "First name cannot contain special characters or numbers.")]
