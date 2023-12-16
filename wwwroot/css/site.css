@@ -1,18 +1,68 @@
+/* Base Font Size */
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
+/* Responsive Font Size Adjustment for Larger Screens */
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
+/* HTML Styles for Responsive Design */
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
+/* Body Styles */
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px; /* Space for a potential fixed footer */
+}
+
+/* Layout Adjustment for Larger Screens */
+@media (min-width: 768px) {
+    /* Adjust container width for larger screens */
+    .container {
+        max-width: 1200px; /* Adjust the maximum width as needed */
+        margin: 0 auto; /* Center the container */
+    }
+}
+
+/* Image and Media Adjustment */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navigation Bar Adjustment for Smaller Screens */
+@media (max-width: 768px) {
+    /* Adjust navigation for smaller screens */
+    .nav-links {
+        display: none; /* or change to a mobile-friendly menu */
+    }
+}
+
+/* Refined Button Styles */
+/* Refined Button Styles */
+button {
+    background-color: #4CAF50 !important; /* Green background color */
+    color: white !important; /* White text color */
+    padding: 10px 20px; /* Padding around the text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor on hover */
+}
+
+/* Improved Typography */
+body {
+    font-family: 'Arial', sans-serif; /* Suitable font family */
+    line-height: 1.6; /* Improved line height for better readability */
+}
+
+/* Enhanced Color Scheme */
+body {
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark text color */
 }

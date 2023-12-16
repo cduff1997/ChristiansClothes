@@ -11,44 +11,44 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-primary border-bottom box-shadow mb-3">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ChristiansClothes</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="ListProducts">Products</a>
+                            <a class="nav-link" asp-area="" asp-controller="Product" asp-action="ListProducts">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">About</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="About">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Contact" asp-action="Index">Contact</a>
+                            <a class="nav-link" asp-area="" asp-controller="Contact" asp-action="Index">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="FAQ">FAQ</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="FAQ">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Tools">Tools</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Tools">Tools</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Events">Events</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Events">Events</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="ProductModels" asp-action="Index">ProductDb</a>
+                            <a class="nav-link" asp-area="" asp-controller="ProductModels" asp-action="Index">ProductDb</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="ContactModels" asp-action="Index">ContactDb</a>
+                            <a class="nav-link" asp-area="" asp-controller="ContactModels" asp-action="Index">ContactDb</a>
                         </li>
                     </ul>
                 </div>
@@ -58,7 +58,11 @@
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
-            <img src="~/images/ChristiansClothes.png" alt="Christian's Clothes Image" class="img-fluid rounded mx-auto d-block" />
+
+            @if (ViewBag.IsHomePage != null && (bool)ViewBag.IsHomePage)
+            {
+                <img src="~/images/ChristiansClothes.png" alt="Christian's Clothes Image" class="img-fluid rounded mx-auto d-block" />
+            }
         </main>
     </div>
 
